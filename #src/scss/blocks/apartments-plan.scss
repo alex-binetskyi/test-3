@@ -1,0 +1,122 @@
+.apartments-plan {
+  padding: 65px 0 170px;
+}
+
+.apartments-plan__text-container {
+  width: 540px;
+  margin: 0 0 55px;
+  padding-left: 82px;
+}
+
+.apartments-plan__slogan {
+  position: relative;
+  margin: 0 0 35px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -82px;
+    width: 45px;
+    height: 5px;
+    background-color: #86b22b;
+  }
+}
+
+.apartments-plan__title {
+  margin: 0 0 10px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.apartments-plan__text {
+  font-size: 16px;
+}
+
+.apartments-plan__filters {
+  display: grid;
+  grid-template-columns: repeat(3, 380px);
+  margin-bottom: 90px;
+  border-radius: 4px;
+  background-color: rgb(134, 178, 43);
+  box-shadow: 0 8px 36.4px 3.6px rgba(35, 35, 35, 0.2);
+  color: #ffffff;
+}
+
+.apartments-plan__filter {
+  padding: 25px 25px 40px;
+}
+
+.apartments-plan__filter-title {
+  padding-bottom: 15px;
+  font-size: 16px;
+  font-family: "Roboto Condensed";
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.35);
+}
+
+
+.apartments-plan__cards {
+  @include list-reset;
+  display: flex;
+  justify-content: space-between;
+}
+
+.apartments-plan__card {
+  box-sizing: border-box;
+  width: 345px;
+  padding: 45px 17px 30px 17px;
+  box-shadow: 0 0 32px 0 rgba(42, 42, 42, 0.21);
+}
+
+.apartments-plan__card-schema {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 0 30px;
+
+  img {
+    display: block;
+    margin: 0 auto 30px;
+    padding-left: 25px;
+  }
+
+  figcaption {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #86b22b;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+.apartments-plan__card-table {
+  width: 100%;
+
+  tbody {
+    display: flex;
+    flex-direction: column;
+  }
+
+  tr {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    &:nth-last-child(1) {
+      margin-bottom: 0;
+    }
+  }
+
+  td {
+    font-size: 16px;
+    color: #3a3a3a;
+  }
+}

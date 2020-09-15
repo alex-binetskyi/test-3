@@ -1,0 +1,111 @@
+.banner {
+  position: relative;
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding: 305px 0 270px;
+  background-color: #29578e;
+  background-image: url("../img/background-banner.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.banner__content-container {
+  width: 600px;
+  color: #ffffff;
+}
+
+.banner__title {
+  position: relative;
+  z-index: 10;
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 58px;
+
+  &::before {
+    content: attr(data-shadow);
+    top: -15px;
+    position: absolute;
+    z-index: -1;
+    font-family: "Roboto Condensed";
+    color: rgba(0, 0, 0, 0.31);
+    font-weight: bold;
+    line-height: 1.2;
+    transform: scale(1.1);
+  }
+}
+
+.banner__lead {
+  margin: 0 0 40px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 42px;
+}
+
+.banner__text {
+  margin: 0 0 20px;
+  font-size: 16px;
+
+  &:nth-last-child(2) {
+    margin-bottom: 55px;
+  }
+}
+
+.banner__link {
+  padding: 25px 20px 21px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+
+  &--sign-up {
+    margin-right: 15px;
+    color: #ffffff;
+    background-color: #86b22b;
+
+    &:hover {
+      background-color: #53740E;
+    }
+
+    &:active {
+      opacity: 0.7;
+    }
+  }
+
+  &--look {
+    color: #353535;
+    background-color: #ffffff;
+
+    &:hover {
+      background-color: #efefef;
+    }
+
+    &:active {
+      opacity: 0.7;
+    }
+  }
+}
+
+.banner__button-down {
+  position: absolute;
+  z-index: 10;
+  bottom: 68px;
+  left: 50%;
+  box-sizing: border-box;
+  width: 57px;
+  height: 57px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  background-image: url("../img/arrow-down.png");
+  background-size: 30px 18px;
+  background-position: center 57%;
+  background-repeat: no-repeat;
+  box-shadow: none;
+  cursor: pointer;
+}
